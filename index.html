@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Fórmula General</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3>Calculadora de Fórmula General</h3>
+        <label>Valor de a:
+            <input type="number" placeholder="Ingrese valor de a" required class="form-control">
+        </label><br><br>
+
+        <label>Valor de b:
+            <input type="number" placeholder="Ingrese valor de b" required class="form-control">
+        </label><br><br>
+
+        <label>Valor de c:
+            <input type="number" placeholder="Ingrese valor de c" required class="form-control">
+        </label><br><br>
+
+        <button type="button">Calcular</button>
+
+        <h4 class="mt-4">Resultado:</h4>
+        <p id="resultado"></p>
+        
+    </form>
+</body>
+</html>
